@@ -7,7 +7,7 @@ import './App.scss';
 
 function App() {
   return (
-    <BrowserRouter basename='/netflix-using-react'>
+    <BrowserRouter>
       <Header/>
     <Routes>
         <Route path='/' element={<Home/>}/>
