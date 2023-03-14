@@ -24,13 +24,13 @@ function Home() {
           const response = await fetch(`${url}${DataName}?api_key=${apikey}&language=en-US&page=2`);
           const data = await response.json();
 
-          if(DataName == 'popular'){
+          if(DataName === 'popular'){
             setPopularData(...popularData,data.results);
           }
-          if(DataName == 'upcoming'){
+          if(DataName === 'upcoming'){
             setUpcomingData(...upcomingData,data.results);
           }
-          if(DataName == 'top_rated'){
+          if(DataName === 'top_rated'){
             setTop_ratedData(...top_ratedData,data.results);
           }
         

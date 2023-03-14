@@ -12,7 +12,11 @@ function Row({title,arr=[]}) {
           <div className='card'>
             {
                 arr.map((item,ind)=>{
-                    return <Card cardimg={`${imgUrl}${item.poster_path}`} key={ind}/>
+                    return (
+                            <Card cardimg={`${imgUrl}${item.poster_path}`} 
+                                  key={ind} 
+                                  cardTitle={item.title}/>
+                    )
                 })
             }
           </div>
