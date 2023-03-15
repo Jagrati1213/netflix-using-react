@@ -51,10 +51,10 @@ function Home() {
               <h2>{'Wtach on netflix'}</h2>
 
               <div>
-                   <Link to='/netflix-using-react/playmovie'>
+                   <Link to='/playmovie'>
                        <button style={{textDecoration:'none'}}><BsFillPlayFill/> Play</button>
                    </Link>
-                   <Link to='/netflix-using-react/mylist'>
+                   <Link to='/mylist'>
                         <button style={{background: '#bdbbbf7'}}><FiPlus/>MyList</button>
                    </Link>
               </div>
