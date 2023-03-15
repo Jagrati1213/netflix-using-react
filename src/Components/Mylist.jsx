@@ -1,17 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import '../Home.scss';
+import React,{useState,useEffect} from 'react';
+import Backbtn from './Backbtn';
 import Row from './Row';
-import {BsFillPlayFill} from 'react-icons/bs';
-import {FiPlus} from 'react-icons/fi'
-import { Link } from 'react-router-dom';
+
 
 const apikey="60e44d36825f1e1e45aca35954739a6d";
 const url = "https://api.themoviedb.org/3/movie/";
 const popular = "popular";
 const upcoming = "upcoming";
-const topRated = "top_rated";
+const topRated = "top_rated"
 
-function Home() {
+function Mylist() {
 
     const [popularData, setPopularData]= useState([]);
     const [upcomingData, setUpcomingData]= useState([]);
@@ -43,29 +41,13 @@ function Home() {
     },[]);
 
   return (
-    <section className='home'>
-        <div className="banner">
-
-          <div className="button_box">
-              <h1>{'Stranger Things'}</h1>
-              <h2>{'Wtach on netflix'}</h2>
-
-              <div>
-                   <Link to='/playmovie'>
-                       <button style={{textDecoration:'none'}}><BsFillPlayFill/> Play</button>
-                   </Link>
-                   <Link to='/mylist'>
-                        <button style={{background: '#bdbbbf7'}}><FiPlus/>MyList</button>
-                   </Link>
-              </div>
-          </div>
-          
-        </div>
-        <Row title={"Popular"}    arr={popularData}/>
-        <Row title={"Upcomings"}  arr={upcomingData}/>
-        <Row title={"Top Rated"}  arr={top_ratedData}/>
-    </section>
+    <>
+        <Backbtn/>
+        <Row  arr={popularData}/>
+        <Row  arr={upcomingData}/>
+        <Row  arr={top_ratedData}/>    
+    </>
   )
 }
 
-export default Home
+export default Mylist;

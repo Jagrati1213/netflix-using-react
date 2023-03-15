@@ -8,9 +8,12 @@ $font:#fff;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif; 
+    scroll-behavior: smooth;
 }
 body{
     background: $body;
+    overflow-x: hidden;
+    width: 100%;
 
     &::-webkit-scrollbar{
         appearance: none;
@@ -33,6 +36,7 @@ body{
         position: sticky;
         top: 0;
         z-index: 111;
+        overflow: hidden;
 
     > .div_1,
     .menu_list,
@@ -83,24 +87,51 @@ body{
                 cursor:pointer;
                 font-size: 1.5rem;
                 padding-right: 2rem;
+                input{
+                    display: none;
+                }
+           &:hover {
+                border: 1px solid white;
+                margin-right: 5px;
+                border-radius: 5px;
+                padding: 5px 20px;
+
+                input{
+                    display: block;
+                    border: none;
+                    outline: none;
+                    background: transparent;
+                    padding-left: 10px;
+                    font-size: 16px;
+                    color: #fff;
+
+                    &::placeholder{
+                       color: #fff;
+                    }
+                }
+                @media only screen and (max-width:661px) {
+                    padding: 5px 1px;
+                    font-size: 16px;
+                }
             }
-    }
+           }
+    } 
 }
-.movie,
-.tvshows{
-    width: 100%;
-    height: 100vh;
-    color: #fff;
-    padding-top: 5rem;
-    h1,p{
-        text-align: center;
-    }
-    h1{
-        font-size: 3rem;
-    }
-    p{
-        margin-top: 1rem;
-        font-size: 1.6rem;
-        color: rgba(211, 211, 211, 0.753);
-    }
-}
+// .movie,
+// .tvshows{
+//     width: 100%;
+//     height: 100vh;
+//     color: #fff;
+//     padding-top: 5rem;
+//     h1,p{
+//         text-align: center;
+//     }
+//     h1{
+//         font-size: 3rem;
+//     }
+//     p{
+//         margin-top: 1rem;
+//         font-size: 1.6rem;
+//         color: rgba(211, 211, 211, 0.753);
+//     }
+// }

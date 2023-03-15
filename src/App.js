@@ -1,9 +1,9 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './Components/Header';
 import Home from './Components/Home';
-import Movie from './Components/Movie';
-import TvShows from './Components/TvShows';
 import './App.scss';
+import PlayMovie from './Components/PlayMovie';
+import Mylist from './Components/Mylist';
 
 function App() {
   return (
@@ -11,8 +11,9 @@ function App() {
       <Header/>
     <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/movie' element={<Movie/>}/>
-        <Route path='/tvshows' element={<TvShows/>}/>
+        <Route path='/mylist' element={<Mylist/>}/>
+        <Route path='/playmovie' element={<PlayMovie/>}/>
+        <Route path='/mylist' element={<Mylist/>}/>
     </Routes>
     </BrowserRouter>
   );
