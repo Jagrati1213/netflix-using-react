@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
       <Header/>
     <Routes>
-        <Route path='/netflix-using-react' element={<Home/>}/>
+        <Route path='' element={<Home/>}/>
         <Route path='/mylist' element={<Mylist/>}/>
         <Route path='/playmovie' element={<PlayMovie/>}/>
         <Route path='/mylist' element={<Mylist/>}/>
