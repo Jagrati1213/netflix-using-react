@@ -13,7 +13,7 @@ function Backbtn() {
                 marginLeft:'2rem'
                 }}>
               <div>
-                  <Link to='/netflix-using-react' style={{color:'white'}}>
+                  <Link to='/' style={{color:'white'}}>
                       <BiArrowBack/>
                   </Link>
               </div>
