@@ -2,12 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from './images/logo.png';
 import {BsSearch} from "react-icons/bs";
-import { useState } from 'react';
 
 
 function header() {
 
-  // const [isInput, setIsInput] =s React.useState(false);
   return (
         <nav className="header">
           <div className="div_1">
