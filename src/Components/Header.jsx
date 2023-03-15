@@ -10,7 +10,7 @@ function header() {
         <nav className="header">
           <div className="div_1">
 
-                <Link className="logo_box" to='/'>
+                <Link className="logo_box" to='/netflix-using-react/'>
                     <img src={logo} alt="netflix logo"/>
                 </Link>
 

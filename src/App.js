@@ -7,10 +7,10 @@ import Mylist from './Components/Mylist';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/netflix-using-react/'>
       <Header/>
     <Routes>
-        <Route path='/' element={<Home/>}/>
+        <Route path='/netflix-using-react/' element={<Home/>}/>
         <Route path='/mylist' element={<Mylist/>}/>
         <Route path='/playmovie' element={<PlayMovie/>}/>
         <Route path='/mylist' element={<Mylist/>}/>
